@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #4a90e2, #36d1dc);
+  color: #000435;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+section {
+  background: rgba(255, 215, 245, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+
+section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#booking-form form {
+  display: grid;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  transition: background-color 0.8s ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="submit"] {
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #36d1dc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
